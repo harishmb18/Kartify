@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kartify</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <div id="navleft">
+                <h1>Kartify</h1>
+            </div>
+            <div id="navcenter">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#products">Items</a></li>
+                    <li><a href="#newsletter">Contact</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </div>
+            <div id="navright">
+                <button class="btn">Login</button>
+                <button class="btn">Sign Up</button>
+                <div class="cart">
+                    <a href="cart.html">
+                        🛒 Cart (<span id="cart-count">0</span>)
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+        <section id="hero">
+            <div class="hero-content">
+                <h1>Discover Amazing Products</h1>
+                <p>Shop the best products with great prices and fast delivery.</p>
+                <a href="#products">
+                    <button class="btn">Shop Now</button>
+                </a>
+            </div>
+        </section>
+
+        <section id="features">
+            <div class="feature">
+                <h3>Fast Delivery</h3>
+                <p>Get your products delivered quickly and safely.</p>
+                <div class="feature-icon">
+                    <i class="fas fa-truck"></i>
+                </div>
+                <!-- <img src="images/feature1.jpg" alt="Feature 1"> -->
+            </div>
+
+            <div class="feature">
+                <h3>Secure Payments</h3>
+                <p>All transactions are protected and encrypted.</p>
+                <div class="feature-icon">
+                    <i class="fas fa-lock"></i>
+                </div>
+                <!-- <img src="images/feature2.jpg" alt="Feature 2"> -->
+            </div>
+
+            <div class="feature">
+                <h3>Quality Products</h3>
+                <p>We provide carefully selected high-quality items.</p>
+                <div class="feature-icon">
+                    <i class="fas fa-star"></i>
+                </div>
+                <!-- <img src="images/feature3.jpg" alt="Feature 3"> -->
+            </div>
+        </section>
+
+        <section id="product-search">
+            <h2>Find Your Product</h2>
+            <input type="text" id="search-input" placeholder="Search products...">
+        </section>
+
+        <section id="product-filters">
+            <h2>Browse Products</h2>
+            <div class="filters">
+                <button class="filter-btn" data-category="all">
+                    All
+                </button>
+                <button class="filter-btn" data-category="electronics">
+                    Electronics
+                </button>
+                <button class="filter-btn" data-category="jewelery">
+                    Jewelry
+                </button>
+                <button class="filter-btn" data-category="men's clothing">
+                    Men's Clothing
+                </button>
+                <button class="filter-btn" data-category="women's clothing">
+                    Women's Clothing
+                </button>
+
+                <section id="product-sort">
+                    <label for="sort-select">Sort By:</label>
+                    <select id="sort-select">
+                        <option value="default">Default</option>
+                        <option value="price-low">
+                            Price: Low to High
+                        </option>
+                        <option value="price-high">
+                            Price: High to Low
+                        </option>
+                        <option value="rating">
+                            Rating
+                        </option>
+                        <option value="name">
+                            Name (A-Z)
+                        </option>
+                    </select>
+                </section>
+            </div>
+        </section>
+
+        <section id="products"></section>
+
+        <div id="modal" class="modal hidden">
+            <div class="modal-content">
+                <span id="close">&times;</span>
+                <img id="modal-img">
+                <h2 id="modal-title"></h2>
+                <p id="modal-description"></p>
+                <p id="modal-rating"></p>
+                <h3 id="modal-price"></h3>
+            </div>
+        </div>
+
+        <section id="newsletter">
+            <h2>Subscribe for Updates</h2>
+            <p>Get notifications about new products and offers.</p>
+            <form id="newsletter-form">
+                <input type="email" placeholder="Enter your email">
+                <button class="btn">Subscribe</button>
+            </form>
+        </section>
+
+    </main>
+
+
+    <footer>
+
+        <div class="footer-container">
+            <div class="footer-col">
+                <h3>Kartify</h3>
+                <p>
+                    Kartify is a modern online shopping platform designed
+                    to provide a simple and smooth shopping experience.
+                    Explore products from multiple categories with ease.
+                </p>
+                <div class="social">
+                    <h3>Follow Us</h3>
+                    <div class="socials">
+                        <i class="fab fa-instagram"></i>
+                        <i class="fab fa-twitter"></i>
+                        <i class="fab fa-facebook"></i>
+                        <i class="fab fa-youtube"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h3>Latest Products</h3>
+                <ul>
+                    <li>Wireless Headphones</li>
+                    <li>Smart Watch</li>
+                    <li>Men's Jacket</li>
+                    <li>Women's Handbag</li>
+                </ul>
+
+            </div>
+
+            <div class="footer-col">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#products">Shop</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="index.html#newsletter">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h3>Have a Question?</h3>
+                <ul>
+                    <li><i class="fas fa-map-marker-alt"></i> Bangalore, India</li>
+                    <li><i class="fas fa-phone"></i> +91 98765 43210</li>
+                    <li><i class="fas fa-envelope"></i> support@kartify.com</li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p>
+                © 2026 Kartify. All Rights Reserved.
+            </p>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+
+</html>

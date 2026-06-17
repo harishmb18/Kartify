@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,78 +8,136 @@
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
+
 <body>
 
-<header>
-  <div class="nav-container">
-    <a href="index.html" class="logo">Kartify <i class="fa-brands fa-opencart"></i></a>
-    <div class="nav-actions">
-      <button class="btn-login" id="loginBtn">Login</button>
-      <button class="btn-signup" id="signupBtn">Sign Up</button>
-      <a href="cart.html" class="cart-icon">
-        <i class="fas fa-shopping-cart"></i>
-        <span id="cart-count">0</span>
-      </a>
+  <header>
+    <div class="nav-container">
+      <a href="index.html" class="logo">Kartify <i class="fa-brands fa-opencart"></i></a>
+      <div class="nav-actions">
+        <button class="btn-login" id="loginBtn">Login</button>
+        <button class="btn-signup" id="signupBtn">Sign Up</button>
+        <a href="cart.html" class="cart-icon">
+          <i class="fas fa-shopping-cart"></i>
+          <span id="cart-count">0</span>
+        </a>
+      </div>
+      <div class="menu-toggle" id="menuToggle">
+        <i class="fas fa-bars"></i>
+      </div>
     </div>
-    <div class="menu-toggle" id="menuToggle">
-      <i class="fas fa-bars"></i>
+    <div class="mobile-menu" id="mobileMenu">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html#products">Shop</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="cart.html">Cart</a></li>
+        <li><button id="mobileLoginBtn">Login</button></li>
+        <li><button id="mobileSignupBtn">Sign Up</button></li>
+      </ul>
     </div>
-  </div>
-  <div class="mobile-menu" id="mobileMenu">
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="index.html#products">Shop</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="cart.html">Cart</a></li>
-      <li><button id="mobileLoginBtn">Login</button></li>
-      <li><button id="mobileSignupBtn">Sign Up</button></li>
-    </ul>
-  </div>
-</header>
+  </header>
 
-<main>
-  <div class="about-hero">
-    <h1>About Kartify</h1>
-    <p>India's most trusted online shopping destination</p>
-  </div>
-
-  <div class="about-container">
-    <div class="about-text">
-      <h2>Our Story</h2>
-      <p>Kartify started in 2020 with a simple mission – make online shopping easy, reliable, and enjoyable for every Indian. We've grown to serve millions of customers with millions of products across categories.</p>
-      <p>We believe in transparency, fast delivery, and customer-first policies. Our platform works directly with brands and sellers to bring you the best prices and authentic products.</p>
+  <main>
+    <div class="about-hero">
+      <h1>About Kartify</h1>
+      <p>India's most trusted online shopping destination</p>
     </div>
-    <div class="stats">
-      <div class="stat"><h3>2M+</h3><p>Happy Customers</p></div>
-      <div class="stat"><h3>50k+</h3><p>Sellers</p></div>
-      <div class="stat"><h3>10M+</h3><p>Products Sold</p></div>
+
+    <div class="about-container">
+      <div class="about-text">
+        <h2>Our Story</h2>
+        <p>Kartify started in 2020 with a simple mission – make online shopping easy, reliable, and enjoyable for every
+          Indian. We've grown to serve millions of customers with millions of products across categories.</p>
+        <p>We believe in transparency, fast delivery, and customer-first policies. Our platform works directly with
+          brands and sellers to bring you the best prices and authentic products.</p>
+      </div>
+      <div class="stats">
+        <div class="stat">
+          <h3>2M+</h3>
+          <p>Happy Customers</p>
+        </div>
+        <div class="stat">
+          <h3>50k+</h3>
+          <p>Sellers</p>
+        </div>
+        <div class="stat">
+          <h3>10M+</h3>
+          <p>Products Sold</p>
+        </div>
+      </div>
     </div>
-  </div>
 
-  <div class="values-grid">
-    <div class="value-card"><i class="fas fa-shield-alt"></i><h3>Trust & Safety</h3><p>100% secure payments and buyer protection.</p></div>
-    <div class="value-card"><i class="fas fa-truck"></i><h3>Fast Delivery</h3><p>Same‑day dispatch in metros.</p></div>
-    <div class="value-card"><i class="fas fa-headset"></i><h3>24/7 Support</h3><p>We're here whenever you need us.</p></div>
-    <div class="value-card"><i class="fas fa-exchange-alt"></i><h3>Easy Returns</h3><p>No questions asked return policy.</p></div>
-  </div>
+    <div class="values-grid">
+      <div class="value-card"><i class="fas fa-shield-alt"></i>
+        <h3>Trust & Safety</h3>
+        <p>100% secure payments and buyer protection.</p>
+      </div>
+      <div class="value-card"><i class="fas fa-truck"></i>
+        <h3>Fast Delivery</h3>
+        <p>Same‑day dispatch in metros.</p>
+      </div>
+      <div class="value-card"><i class="fas fa-headset"></i>
+        <h3>24/7 Support</h3>
+        <p>We're here whenever you need us.</p>
+      </div>
+      <div class="value-card"><i class="fas fa-exchange-alt"></i>
+        <h3>Easy Returns</h3>
+        <p>No questions asked return policy.</p>
+      </div>
+    </div>
 
-  <div class="team-grid">
-    <div class="member"><img src="https://randomuser.me/api/portraits/women/68.jpg" alt="CEO"><h3>Neha Sharma</h3><p>Founder & CEO</p></div>
-    <div class="member"><img src="https://randomuser.me/api/portraits/men/32.jpg" alt="CTO"><h3>Rahul Verma</h3><p>CTO</p></div>
-    <div class="member"><img src="https://randomuser.me/api/portraits/women/44.jpg" alt="CPO"><h3>Anjali Nair</h3><p>Head of Product</p></div>
-  </div>
-</main>
+    <div class="team-grid">
+      <div class="member"><img src="https://randomuser.me/api/portraits/women/68.jpg" alt="CEO">
+        <h3>Neha Sharma</h3>
+        <p>Founder & CEO</p>
+      </div>
+      <div class="member"><img src="https://randomuser.me/api/portraits/men/32.jpg" alt="CTO">
+        <h3>Rahul Verma</h3>
+        <p>CTO</p>
+      </div>
+      <div class="member"><img src="https://randomuser.me/api/portraits/women/44.jpg" alt="CPO">
+        <h3>Anjali Nair</h3>
+        <p>Head of Product</p>
+      </div>
+    </div>
+  </main>
 
-<footer>
-  <div class="footer-grid">
-    <div class="footer-col"><h3>Kartify</h3><p>India's fastest growing online shopping destination.</p><div class="social-icons"><i class="fab fa-facebook"></i><i class="fab fa-instagram"></i><i class="fab fa-twitter"></i><i class="fab fa-youtube"></i></div></div>
-    <div class="footer-col"><h4>Useful Links</h4><ul><li><a href="index.html">Home</a></li><li><a href="#products">Shop</a></li><li><a href="about.html">About</a></li><li><a href="cart.html">Cart</a></li></ul></div>
-    <div class="footer-col"><h4>Contact</h4><ul><li><i class="fas fa-map-marker-alt"></i> Bangalore, India</li><li><i class="fas fa-phone"></i> +91 98765 43210</li><li><i class="fas fa-envelope"></i> support@kartify.com</li></ul></div>
-  </div>
-  <div class="footer-bottom">© 2026 Kartify – All rights reserved</div>
-</footer>
+  <footer>
+    <div class="footer-grid">
+      <div dclass="footer-col">
+        <h3>Kartify</h3>
+        <p id="footer1">India's fastest growing online shopping destination.</p>
+        <div class="social-icons">
+          <i class="fab fa-facebook"></i>
+          <i class="fab fa-instagram"></i>
+          <i class="fab fa-twitter"></i>
+          <i class="fab fa-youtube"></i>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Useful Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#products">Shop</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="cart.html">Cart</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul>
+          <li><i class="fas fa-map-marker-alt"></i> Bangalore, India</li>
+          <li><i class="fas fa-phone"></i> +91 98765 43210</li>
+          <li><i class="fas fa-envelope"></i> support@kartify.com</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">© 2026 Kartify – All rights reserved</div>
+  </footer>
 
-<button id="backToTop" class="back-to-top"><i class="fas fa-arrow-up"></i></button>
-<script src="main.js"></script>
+  <button id="backToTop" class="back-to-top"><i class="fas fa-arrow-up"></i></button>
+  <script src="main.js"></script>
 </body>
+
 </html>

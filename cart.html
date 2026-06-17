@@ -1,17 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Your Cart | Kartify</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
-        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
-<body>
+<body>  
     <header>
         <nav>
             <div id="navleft">
@@ -28,23 +24,19 @@
         </nav>
     </header>
 
-    <main>
-        <section id="cart-page">
-            <h1>Your Shopping Cart</h1>
-            <div id="cart-items">
-            </div>
-
-            <div id="cart-summary">
-                <h2>Total: $<span id="cart-total">0</span></h2>
-                <button class="btn">
-                    Checkout
-                </button>
-            </div>
-        </section>
-    </main>
+<main class="cart-main">
+  <h1>Your Shopping Cart</h1>
+  <div id="cart-items" class="cart-items-list"></div>
+  <div id="cart-summary" class="cart-summary">
+    <h2>Total: $<span id="cart-total">0.00</span></h2>
+    <div class="cart-actions">
+      <button id="clear-cart-btn" class="btn-secondary">Clear Cart</button>
+      <button id="checkout-btn" class="btn-primary" style="background:#2874f0; color:white; border:none; padding:10px 24px; border-radius:4px;">Proceed to Checkout</button>
+    </div>
+  </div>
+</main>
 
     <footer>
-
         <div class="footer-container">
             <div class="footer-col">
                 <h3>Kartify</h3>
@@ -53,14 +45,10 @@
                     to provide a simple and smooth shopping experience.
                     Explore products from multiple categories with ease.
                 </p>
-                <div class="social">
-                    <h3>Follow Us</h3>
-                    <div class="socials">
-                        <i class="fab fa-instagram"></i>
-                        <i class="fab fa-twitter"></i>
-                        <i class="fab fa-facebook"></i>
-                        <i class="fab fa-youtube"></i>
-                    </div>
+                <div class="socials">
+                    <span>Instagram</span>
+                    <span>Twitter</span>
+                    <span>Facebook</span>
                 </div>
             </div>
 
@@ -72,7 +60,6 @@
                     <li>Men's Jacket</li>
                     <li>Women's Handbag</li>
                 </ul>
-
             </div>
 
             <div class="footer-col">
@@ -88,14 +75,12 @@
             <div class="footer-col">
                 <h3>Have a Question?</h3>
                 <ul>
-                    <li><i class="fas fa-map-marker-alt"></i> Bangalore, India</li>
-                    <li><i class="fas fa-phone"></i> +91 98765 43210</li>
-                    <li><i class="fas fa-envelope"></i> support@kartify.com</li>
+                    <li>Bangalore, India</li>
+                    <li>+91 98765 43210</li>
+                    <li>support@kartify.com</li>
                 </ul>
             </div>
-
         </div>
-
         <div class="footer-bottom">
             <p>
                 © 2026 Kartify. All Rights Reserved.
@@ -103,7 +88,7 @@
         </div>
     </footer>
 
-    <script src="main.js"></script>
+<button id="backToTop" class="back-to-top"><i class="fas fa-arrow-up"></i></button>
+<script src="main.js"></script>
 </body>
-
 </html>
